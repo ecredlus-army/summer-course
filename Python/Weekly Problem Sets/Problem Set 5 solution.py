@@ -60,7 +60,7 @@ def flatten(input_list: list) -> list:
     # recurse remaining elements
     remaining_elements = flatten(input_list[1:])
 
-    result = first_element.extend(remaining_elements)
+    result = first_element + remaining_elements
     return result
 
 
